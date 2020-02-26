@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+        <meta charset="utf-8" />
+        <title>Belajar Javascript</title>
+ </head>
+ <body>
+        <b>URL Halaman ini</b> <br /><br />
+        <button type="button" onclick="tombol()" name="button">Tampilkan</button>
+        <p id="url"></p>
+        <hr />
+        <a href="index.html">Pindah Kehalaman Lain</a>
+        
+        <script type="text/javascript">
+                function tombol(){
+                        var a = document.baseURI;
+                        document.getElementById("url").innerHTML=a;
+                }
+        </script>
+ </body>
+</html>

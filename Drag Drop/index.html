@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <style>
+        .droptarget{
+            float: left;
+            width:100px;
+            height:35px;
+            margin: 15px;
+            padding: 10px;
+            border: 1px solid #aaaaaa;
+        }    
+        </style>
+        <script src="tugas31.js"></script>
+    </head>
+    <body>
+        <p>Drag Element Diantara Dua Kotak</p>
+        <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">Drag</p>
+        </div>
+
+        <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <p id="object_text"></p>
+        <input type="text" onfocus="focus123(this)">
+    </body>
+</html>
